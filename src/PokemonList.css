@@ -1,0 +1,41 @@
+* {
+    background-color: rgba(21, 33, 65, 0.29);
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-image-container {
+    position: relative;
+}
+
+.pokemon-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* put searchbar on top of the list */
+.pokemon-list {
+    margin-top: 50px;
+}
+
+/* Path: src\SearchBar.css */
+.search-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(21, 33, 65, 0.29);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
