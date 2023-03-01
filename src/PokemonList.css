@@ -1,41 +1,94 @@
-* {
-    background-color: rgba(21, 33, 65, 0.29);
+.pokemon-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    background-color: rgba(2, 2, 10, 0.67);
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+.pokemon-item p {
+    color: azure;
+}
+
+.pokemon-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(42, 31, 65, 0.67);
+    padding: 10px;
+    font-size: 0.8rem;
+    font-family: 'Roboto Mono', monospace;
+    color: azure;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
 
 .pokemon-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
+/* let the image big */
 .pokemon-image-container {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .pokemon-info {
     position: absolute;
-    bottom: 0;
+    bottom: 100%;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
     color: white;
-    padding: 5px;
-    font-size: 0.9rem;
+    padding: 3px;
+    font-size: 0.8rem;
     font-family: 'Roboto Mono', monospace;
+}
+
+.pokemon-info p {
+    /* break the lines */
+    word-break: break-all;
 }
 
 /* put searchbar on top of the list */
 .pokemon-list {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
-/* Path: src\SearchBar.css */
 .search-bar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(21, 33, 65, 0.29);
+    height: 50px;
+    background-color: rgba(42, 31, 65, 0.67);
     padding: 10px;
     display: flex;
     justify-content: center;
+    z-index: 1;
+}
+
+/*let it transparent*/
+.search-bar img {
+    margin-right: -300px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.search-bar input {
+    color: azure;
+    font-size: 0.8rem;
+    font-family: 'Roboto Mono', monospace;
 }
